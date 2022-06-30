@@ -2,7 +2,7 @@ import React from "react";
 import './index.css';
 import JesusFoto from '../../images/jesu.png'
 import SkillCard from "../../components/skillCards/skillCard";
-
+import Footer from "../../components/footer/footer";
 
 export default function Index() {
 
@@ -27,9 +27,9 @@ export default function Index() {
                         <SkillCard>
                             <div className="property-card">
                                 <a href="#">
-                                    <div className="property-image" style={{backgroundImage: `url(${JesusFoto})`}}>
+                                    <div className="property-image" style={{ backgroundImage: `url(${JesusFoto})` }}>
                                         <div className="property-image-title">
-                                           
+
                                         </div>
                                     </div></a>
                                 <div className="property-description">
@@ -42,9 +42,9 @@ export default function Index() {
                         <SkillCard>
                             <div className="property-card">
                                 <a href="#">
-                                    <div className="property-image" style={{backgroundImage: `url(${JesusFoto})`}}>
+                                    <div className="property-image" style={{ backgroundImage: `url(${JesusFoto})` }}>
                                         <div className="property-image-title">
-                                           
+
                                         </div>
                                     </div></a>
                                 <div className="property-description">
@@ -53,11 +53,14 @@ export default function Index() {
                                 </div>
                             </div>
                         </SkillCard>
-
-
                     </div>
                 </div>
             </section>
+            <div>
+                <footer className="index-footer">
+                    <Footer />
+                </footer>
+            </div>
         </>
     );
 

@@ -24,7 +24,7 @@
 
 .property-card
 {
-  height:10em;
+  height:8em;
   width:6em;
   display:-webkit-box;
   display:-ms-flexbox;
@@ -71,36 +71,14 @@
   text-align:center;
 }
 
-.property-social-icons
-{
-  width:1em;
-  height:1em;
-  background-color:black;
-  position:absolute;
-  bottom:1em;
-  left:1em;
-  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
 .property-card:hover .property-description
 {
   height:0em;
-  padding:0px 1em;
+  padding:0px 0em;
 }
 .property-card:hover .property-image
 {
-  height:10em;
+  height:2rem;
 }
 
-.property-card:hover .property-social-icons
-{
-  background-color:white;
-}
 
-.property-card:hover .property-social-icons:hover
-{
-  background-color:blue;
-  cursor:pointer;
-}

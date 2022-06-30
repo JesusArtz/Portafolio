@@ -1,20 +1,22 @@
 :root {
-    --gradient-principal: linear-gradient(90deg, rgb(189, 0, 196) 0%, rgb(137, 41, 255) 100%); 
+    --gradient-principal: linear-gradient(90deg, rgb(189, 0, 196) 0%, rgb(137, 41, 255) 100%);
 }
 
-.gradient-navbar{
+.gradient-navbar {
     position: relative !important;
     background: var(--gradient-principal) !important;
     width: 100% !important;
     margin-bottom: 3rem;
     height: 8vh;
+    -webkit-box-shadow: -1px 4px 7px 7px rgba(0,0,0,0.17); 
+    box-shadow: -1px 4px 7px 7px rgba(0,0,0,0.17);
 }
 
-.color-rutas{
+.color-rutas {
     color: white;
 }
 
-.ruta-principal{
+.ruta-principal {
     color: white;
     padding-left: 2.5vw;
     padding-right: 2.5vw;
