@@ -2,7 +2,7 @@ import React from "react";
 import './index.css';
 import JesusFoto from '../../images/jesu.png'
 import SkillCard from "../../components/skillCards/skillCard";
-import Footer from "../../components/footer/footer";
+
 
 export default function Index() {
 
@@ -56,11 +56,7 @@ export default function Index() {
                     </div>
                 </div>
             </section>
-            <div>
-                <footer className="index-footer">
-                    <Footer />
-                </footer>
-            </div>
+            
         </>
     );
 

@@ -1,6 +1,7 @@
 import React from "react";
 import JesusFoto from '../../images/jesu.png'
 import './cv.css'
+import Experience from "../../components/experience/experience";
 
 export default function CV() {
 
@@ -18,7 +19,74 @@ export default function CV() {
                 </div>
             </section>
             <section className="cv-section-experience">
+                <div className="cv-experience-container">
+                    <div className="cv-experience-tittle">
+                        <span>Experiencia de Trabajo</span>
+                    </div>
+                    <div className="cv-experience-cards-container">
 
+                        <Experience>
+                            <div className="card">
+                                <div className="face face1">
+                                    <div className="content">
+                                        <div className="icon">
+                                            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="face face2">
+                                    <div className="content">
+                                        <h3>
+                                            <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
+                                        </h3>
+                                        <p>This is where I network and build my professional protfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Experience>
+
+                        <Experience>
+                            <div className="card">
+                                <div className="face face1">
+                                    <div className="content">
+                                        <div className="icon">
+                                            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="face face2">
+                                    <div className="content">
+                                        <h3>
+                                            <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
+                                        </h3>
+                                        <p>This is where I network and build my professional protfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Experience>
+
+                        <Experience>
+                            <div className="card">
+                                <div className="face face1">
+                                    <div className="content">
+                                        <div className="icon">
+                                            <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="face face2">
+                                    <div className="content">
+                                        <h3>
+                                            <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
+                                        </h3>
+                                        <p>This is where I network and build my professional protfolio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </Experience>
+                        
+                    </div>
+                </div>
             </section>
         </>
     );

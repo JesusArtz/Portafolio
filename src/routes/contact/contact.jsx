@@ -22,11 +22,25 @@ export default function Contact(){
     }, [data])
 
     return(
-        <form onSubmit={enviarDatos}>
-            <input type="text" placeholder="Asunto" name="asunto" onChange={handleInputChange} />
-            <input type="text" placeholder="Mensaje" name="mensaje" onChange={handleInputChange} />
-            <button type="submit">Enviar</button>
-        </form>
+        <section className="cv-section-contact">
+            <div className="cv-contact-container">
+                <form onSubmit={enviarDatos}>
+
+                    <div className="cv-contact-input">
+                        <input type="text" name="asunto" id="asunto" placeholder="asunto" onChange={handleInputChange} />
+                        <label htmlFor="asunto">Asunto</label>
+                    </div>
+
+                    <div className="cv-contact-input">
+                        <input type="text" name="mensaje" id="mensaje" placeholder="Mensaje" onChange={handleInputChange} />
+                        <label htmlFor="mensaje">Mensaje</label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </section>
     );
 
 }
