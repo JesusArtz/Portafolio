@@ -21,7 +21,7 @@
 }
 
 .index-presentation-avatar {
-    margin: 3rem auto 2rem;
+    margin: 5rem auto 3rem;
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
@@ -34,7 +34,7 @@
 .index-presentation-link {
     padding: 0.8rem;
     position: relative;
-    top: 3rem;
+    top: 5rem;
     left: 31%;
     width: 180px;
     height: 60px;
