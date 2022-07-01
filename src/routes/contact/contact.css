@@ -11,3 +11,14 @@
     justify-content: center;
 
 } */
+
+.contact-section-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.boton-enviar-contact {
+    background-color: rgb(137, 41, 255);
+}

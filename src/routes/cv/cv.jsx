@@ -39,7 +39,7 @@ export default function CV() {
                                         <h3>
                                             <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
                                         </h3>
-                                        <p>This is where I network and build my professional protfolio.</p>
+                                        <p>Desarrollo de la plataforma de cursos de MexicoDev con Django.</p>
                                     </div>
                                 </div>
                             </div>
@@ -57,9 +57,9 @@ export default function CV() {
                                 <div className="face face2">
                                     <div className="content">
                                         <h3>
-                                            <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
+                                            <a href="https://mexicodev.org/" target="_blank">Jesus Artz</a>
                                         </h3>
-                                        <p>This is where I network and build my professional protfolio.</p>
+                                        <p>Desarrollo de mi portafolio con react.</p>
                                     </div>
                                 </div>
                             </div>
@@ -77,9 +77,9 @@ export default function CV() {
                                 <div className="face face2">
                                     <div className="content">
                                         <h3>
-                                            <a href="https://mexicodev.org/" target="_blank">MexicoDev</a>
+                                            <a href="https://mexicodev.org/" target="_blank">DomiTech</a>
                                         </h3>
-                                        <p>This is where I network and build my professional protfolio.</p>
+                                        <p>Desarrollo de plataforma de ahorros hecha con react y flask.</p>
                                     </div>
                                 </div>
                             </div>
