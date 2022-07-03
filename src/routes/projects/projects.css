@@ -1,0 +1,11 @@
+.projects-area {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.heading-projects {
+    padding: 3rem;
+    text-align: center;
+}

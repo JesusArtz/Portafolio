@@ -15,7 +15,11 @@
 .contact-section-form {
     display: flex;
     justify-content: center;
-    align-items: center;
+    height: 80%;
+}
+
+.heading-contact {
+    padding: 3rem;
     text-align: center;
 }
 
