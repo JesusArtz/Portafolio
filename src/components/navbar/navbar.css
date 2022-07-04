@@ -21,3 +21,7 @@
     padding-left: 2.5vw;
     padding-right: 2.5vw;
 }
+
+.nav-item:hover {
+    color:rgb(201, 201, 201);
+}

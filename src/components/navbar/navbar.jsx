@@ -1,7 +1,7 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from "react-router-dom";
-import './navbar.css'
+import './navbar.css';
 
 export default function Navbar() {
 
@@ -9,7 +9,8 @@ export default function Navbar() {
         Index: '/',
         Projects: '/projects',
         CV: '/cv',
-        Contact: '/contact'
+        Contact: '/contact',
+        Blog: '/blog',
     };
 
     return (

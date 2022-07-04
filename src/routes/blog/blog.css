@@ -1,0 +1,8 @@
+.blog-section-blog {
+    display: flex;
+    align-items: center;
+}
+
+.blog-element-post {
+    color: black;
+}

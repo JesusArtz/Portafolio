@@ -18,11 +18,7 @@ function App() {
                     </Route>
                 ))}
             </Routes>
-            <div>
-                <footer className="index-footer">
-                    <Footer />
-                </footer>
-            </div>
+            <Footer />
         </Router>
         
     );

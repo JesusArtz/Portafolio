@@ -2,6 +2,7 @@ import Index from './index/index';
 import Projects from './projects/projects';
 import CV from './cv/cv';
 import Contact from './contact/contact';
+import Blog from './blog/blog';
 
 const Rutas = [
     {
@@ -20,6 +21,10 @@ const Rutas = [
         path: '/contact',
         ruta: Contact
     },
+    {
+        path: '/blog',
+        ruta: Blog
+    }
 ];
 
 export default Rutas;
