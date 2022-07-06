@@ -1,4 +1,5 @@
 .blog-section-blog {
+
     padding-left: 4rem;
     padding-right: 4rem;
     padding-top: 0.5rem;
@@ -6,5 +7,6 @@
 }
 
 .blog-element-post {
+    
     color: black;
 }

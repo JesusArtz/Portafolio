@@ -2,23 +2,24 @@ import { React, useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import {atomOneLight} from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import md from '../../resource/prueba.md';
 
-export default function BlogPage() {
+export default function BlogPage({id}) {
 
-    const [markdown, setMarkdown] = useState("");
+    const [md, setMd] = useState()
 
     useEffect(() => {
-        fetch(md)
-            .then((res) => res.text())
-            .then((text) => setMarkdown(text));
-    }, []);
 
-    console.log(markdown)
+        fetch(process.env.PUBLIC_URL + `${id}.md`)
+        .then(res => res.text())
+        .then(res => setMd(res))
+
+
+
+    }, [id]);
 
     return (
         <ReactMarkdown
-            children={markdown}
+            children={md}
             components={{
                 code({ node, inline, className, children, ...props }) {
                     const match = /language-(\w+)/.exec(className || '')

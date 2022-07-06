@@ -1,24 +1,61 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './blog.css';
-import FotoChidaXd from '../../images/mexicodev.png';
+import BlogCards from "../../components/blogcards/blogcards";
 import BlogPage from "../../components/blogpage/blogpage";
 
 export default function Blog() {
+    
+    const [element, setElement] = useState(null)
+    const [posts, setPosts] = useState({})
+
+
+    useEffect(() => {
+
+        fetch('http://127.0.0.1:5000/api/getPosts')
+        .then(res => res.json())
+        .then(res => setPosts(res))
+
+    }, [])
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            fetch('http://127.0.0.1:5000/api/getPosts')
+            .then(res => res.json())
+            .then(res => setPosts(res))
+        }, 10000);
+
+
+        return () => clearInterval(interval)
+    },[posts])
+
     return (
         <section className="blog-section-blog">
-            {/* <div className="blog-container">
-                <div className="col-md-6 col-lg-4">
-                    <div className="card border-0"><a href="https://github.com/JesusArtz/AppNotifications" target="_BLANK"><img className="card-img-top scale-on-hover" src={FotoChidaXd} alt="Imagen no cargada"></img></a>
-                        <div className="card-body">
-                            <h6><a href="https://github.com/JesusArtz/AppNotifications" target="_BLANK" style={{ color: '#8929ff' }}>DomiTech</a></h6>
-                            <p className="text-muted card-text">DomiTech es una plataforma de ahorros desarrollada con flask y con react.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
+            <div className="blog-container">
+                {
 
-            <BlogPage />
+                    !element ?  
 
+                    Object.keys(posts).map((route, i) => {
+                        return (      
+                            <BlogCards
+                            key={i}
+                            id={posts[route].key}
+                            name={route}
+                            element={setElement}
+
+                            />
+                        )
+                    })
+                    :
+                    <>
+                    <BlogPage 
+                    id={element}
+                    />
+                    <p onClick={() => setElement(null)} style={{textDecoration: 'underline', color: 'blue'}}>Regresar</p>
+                    </>
+                } 
+            </div>
         </section>
+
     );
 };
